@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: sequra_raw_data 
+    description: "Fuente de datos crudos del modelo de SeQura."
+    database: raw_database 
+    schema: raw_schema 
+
+    tables:
+      - name: orders
+      - name: dim_shoppers
+      - name: rel_default_order_type
+      
+      - name: dim_merchants
+        description: "Tabla de dimensiones de comerciantes (Asumida por el requerimiento final)."
+      - name: dim_products
+        description: "Tabla de dimensiones de productos (Asumida por el requerimiento final)."
