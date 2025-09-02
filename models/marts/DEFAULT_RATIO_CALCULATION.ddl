@@ -1,4 +1,6 @@
 SELECT
+    ORDER_ID,
+    SHOPPER_ID,
     AGE,
     MONTH_YEAR_ORDER,
     PRODUCT,
@@ -8,3 +10,4 @@ SELECT
     SUM(LOANS_IN_ARREARS_DEBT) / SUM(TOTAL_LOAN_AMOUNT) AS DEFAULT_RATIO
 FROM {{ref('output_dataset')}}
 ;
+
