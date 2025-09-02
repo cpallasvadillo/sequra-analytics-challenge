@@ -4,6 +4,8 @@ This repository contains the complete solution for the SeQura Analytics Engineer
 
 ## Part I: 
 The exploration and cleaning process was performed using Python and Pandas, with the final SQL query executed via DuckDB. The full analysis notebook and the clean SQL query.
+Yo can found it on "part_1_sql" branch.
 
 ## Part II: 
 Model for loan default monitoring, following best practices with Staging, Intermediate, and Mart layers.
+Yo can found it on "part_2_dbt" branch.
