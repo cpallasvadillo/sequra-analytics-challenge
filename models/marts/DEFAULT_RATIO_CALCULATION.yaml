@@ -1,0 +1,33 @@
+version: 1
+
+models:
+  - name: default_ratio_calculation
+    description: "Modelo final con la solicitud del Output con el cálculo del Default Ratio"
+    
+    columns:
+      - name: ORDER_ID
+        description: "El identificador único de la orden"
+        tests:
+          - unique
+          - not_null
+
+      - name: shopper_id
+        description: "El identificador del cliente asociado a la orden."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_shoppers')
+              field: shopper_id
+
+      - name: month_year_order
+        description: "Año-mes de la fecha de la orden"
+
+      - name: total_loan_amount
+        description: "El valor total actual del préstamo"
+        tests:
+          - not_null
+
+      - name: loans_in_arrears_debt
+        description: "La deuda vencida para esa orden"
+        tests:
+          - not_null
