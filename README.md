@@ -9,3 +9,4 @@ Yo can found it on "part_1_sql" branch.
 ## Part II: 
 Model for loan default monitoring, following best practices with Staging, Intermediate, and Mart layers.
 Yo can found it on "part_2_dbt" branch.
+
