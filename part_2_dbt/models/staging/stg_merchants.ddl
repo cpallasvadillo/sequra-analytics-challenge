@@ -1,0 +1,4 @@
+SELECT 
+    CAST(MERCHANT_ID AS INTEGER) AS MERCHANT_ID,
+    CAST(MERCHANT_NAME AS VARCHAR) AS MERCHANT_NAME
+FROM {{ source ('sequra_raw_data', 'dim_merchants')}}
