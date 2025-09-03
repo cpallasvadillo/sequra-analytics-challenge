@@ -1,4 +1,0 @@
-SELECT 
-    CAST(PRODUCT_ID AS INTEGER) AS PRODUCT_ID,
-    CAST(PRODUCT_NAME AS VARCHAR) AS PRODUCT_NAME
-FROM {{ source ('sequra_raw_data', 'dim_products')}}
