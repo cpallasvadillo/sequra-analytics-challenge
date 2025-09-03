@@ -1,6 +1,12 @@
 # sequra-analytics-challenge
-This coding challenge is for people who applied to the Analytics Engineer position at seQura
 
-## PART 1: Data Extraction and Recurrence Rate Calculation
-Python with Pandas was used to extract orders and merchants tables into a clean DataFrame. The final query was executed using DuckDB directly on this in-memory DataFrame.
-This repository contains de CSV source, Python Notebook (/part_1_python/) and the SQL query (/shopper_recurrence.ddl/).
+This repository contains the complete solution for the SeQura Analytics Engineer technical exercise. The project is divided into two main parts, each located in its respective folder.
+
+## Part I: 
+The exploration and cleaning process was performed using Python and Pandas, with the final SQL query executed via DuckDB. The full analysis notebook and the clean SQL query.
+Yo can found it on "part_1_sql" branch.
+
+## Part II: 
+Model for loan default monitoring, following best practices with Staging, Intermediate, and Mart layers.
+Yo can found it on "part_2_dbt" branch.
+
